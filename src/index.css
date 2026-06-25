@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-healing-teal: #2A9D8F;
+  --color-warm-amber: #E9C46A;
+  --color-deep-navy: #264653;
+  --color-off-white: #F8F9FA;
+  --color-warm-gray: #E9ECEF;
+  --color-charcoal: #343A40;
+  --color-soothing-green: #52B788;
+  --color-clear-blue: #4A90D9;
+  --color-alert-coral: #E76F51;
+
+  --font-heading: "Nunito Sans", system-ui, sans-serif;
+  --font-body: "Open Sans", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-body text-charcoal bg-off-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading text-deep-navy;
+  }
+}
